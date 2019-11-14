@@ -1,4 +1,4 @@
-// Daniel Shiffman
+// inspired by Daniel Shiffman: The Coding Train Code Challenge
 'use strict'
 
 function Rectangle(x, y, w, h) {
