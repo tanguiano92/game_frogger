@@ -1,6 +1,5 @@
-// Daniel Shiffman
-// http://codingrainbow.com
-// http://patreon.com/codingrainbow
+// inspired by Daniel Shiffman: The Coding Train Code Challenge
+'use strict'
 
 var frog;
 

@@ -1,14 +1,6 @@
-// Daniel Shiffman
-// http://codingrainbow.com
-// http://patreon.com/codingrainbow
+// inspired by Daniel Shiffman: The Coding Train Code Challenge
+'use strict'
 
-/* Implements a rectangle for testing collisions.
- *
- * x: left side x position
- * y: top side y position
- * w: width of this Rectangle
- * h: height of this Rectangle
- */
 function Rectangle(x, y, w, h) {
   this.x = x;
   this.y = y;
