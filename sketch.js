@@ -16,7 +16,7 @@ function resetGame() {
 function setup() {
   width = 500;
   rows = [
-    new Row(            0, 1,    0,         width,   0,   0, true),
+    new Row(          0, 1,    0,         width,   0,   0, true),
     new Row(    grid_size, 1,    0,         width,   0,   0, true),
     new Row(2 * grid_size, 2,  0.5, 4 * grid_size, 400,  10, true),
     new Row(3 * grid_size, 3, -1.3, 2 * grid_size, 200,  30, true),
