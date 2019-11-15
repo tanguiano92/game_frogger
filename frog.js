@@ -2,6 +2,7 @@
 'use strict'
 function Frog(x, y, size) {
   Rectangle.call(this, x, y, size, size);
+
   this.sitting_on = null;
 }
 
