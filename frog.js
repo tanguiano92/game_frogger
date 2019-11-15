@@ -1,5 +1,13 @@
-// inspired by Daniel Shiffman: The Coding Train Code Challenge
-'use strict'
+// Daniel Shiffman
+// http://codingrainbow.com
+// http://patreon.com/codingrainbow
+
+/* Implementation of the frog
+ *
+ * x: initial x position of the frog
+ * y: initial y position of the frog
+ * size: the width & height of the frog
+ */
 function Frog(x, y, size) {
   Rectangle.call(this, x, y, size, size);
 

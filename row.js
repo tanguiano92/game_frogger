@@ -1,5 +1,19 @@
-// inspired by Daniel Shiffman: The Coding Train Code Challenge
-'use strict'
+// Daniel Shiffman
+// http://codingrainbow.com
+// http://patreon.com/codingrainbow
+
+/* Implements a row of the game
+ *
+ * y: represents the y-position of this Row
+ * count: The number of obstacles on this Row
+ * speed: How fast the obstacles move
+ * obs_width: The width of the obstacles
+ * spacing: The gap between the obstacles. This is measured from the left
+ *          of the first obstacle to the left of the next.
+ * offset: The x-coordinate of the first obstacle on the row
+ * inverted: Represents if the frog dies when hit by an obstacle (false)
+ *           or if the frog dies when not hit by an obstacle (true)
+ */
 function Row(y, count, speed, obs_width, spacing, offset, inverted) {
   Rectangle.call(this, 0, y, width, grid_size);
   this.obstacles = [];
