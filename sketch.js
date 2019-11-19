@@ -14,18 +14,19 @@ function resetGame() {
 
 // p5js setup function, ran on page load.
 function setup() {
-  width = 500;
+  width = windowWidth;
+  height = windowHeight;
   rows = [
-    new Row(            0, 1,    0,         width,   0,   0, true),
-    new Row(    grid_size, 1,    0,         width,   0,   0, true),
-    new Row(2 * grid_size, 2,  0.5, 4 * grid_size, 400,  10, true),
-    new Row(3 * grid_size, 3, -1.3, 2 * grid_size, 200,  30, true),
-    new Row(4 * grid_size, 2,  2.3, 3 * grid_size, 250,  25, true),
-    new Row(5 * grid_size, 1,    0,         width,   0,   0, true),
-    new Row(6 * grid_size, 3,  1.2, 1 * grid_size, 150, 100, false),
-    new Row(7 * grid_size, 2, -3.5, 1 * grid_size, 200, 150, false),
-    new Row(8 * grid_size, 2,    2, 2 * grid_size, 300,   0, false),
-    new Row(9 * grid_size, 2,    0,         width,   0,   0, true),
+    new Row(0, 1, 0, width, 0, 100, true),
+    new Row(grid_size, 1, 0, width, 0, 0, true),
+    new Row(2 * grid_size, 2,  0.5, 4 * grid_size, 600,  10, true),
+    new Row(3 * grid_size, 3, -1.3, 2 * grid_size, 400,  30, true),
+    new Row(4 * grid_size, 2,  2.3, 3 * grid_size, 350,  25, true),
+    new Row(5 * grid_size, 1, 0, width, 0, 0, true),
+    new Row(6 * grid_size, 3,  1.2, 1 * grid_size, 250, 100, false),
+    new Row(7 * grid_size, 2, -3.5, 1 * grid_size, 300, 150, false),
+    new Row(8 * grid_size, 2, 2, 2 * grid_size, 400, 0, false),
+    new Row(9 * grid_size, 2, 0, width, 0, 0, true),
   ];
   createCanvas(width, rows.length * grid_size);
   resetGame();
