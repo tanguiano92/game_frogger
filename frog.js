@@ -36,6 +36,6 @@ Frog.prototype.update = function() {
 // if frog function is called
 // show the frog
 Frog.prototype.show = function() {
-  fill(0, 255, 0, 200);
+  fill(0, 255, 0);
   rect(this.x, this.y, this.w, this.h);
 }

@@ -39,8 +39,8 @@ function setup() {
 }
 
 function draw() {
-  background(0);
-  fill(255, 100);
+  background(200, 0, 130);
+  fill(0);
 
   var intersects = null;
 

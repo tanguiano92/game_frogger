@@ -29,6 +29,6 @@
 
  // Display this obstacle.
  Obstacle.prototype.show = function() {
-   fill(200);
+   fill(20, 190, 300);
    rect(this.x, this.y, this.w, this.h);
  }
