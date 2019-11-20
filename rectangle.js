@@ -1,6 +1,9 @@
 // inspired by Daniel Shiffman: The Coding Train Code Challenge
 'use strict'
 
+// if Rectangle function is called
+// show Frog character
+// give frog dimensions and parameters
 function Rectangle(x, y, w, h) {
   this.x = x;
   this.y = y;
@@ -8,7 +11,10 @@ function Rectangle(x, y, w, h) {
   this.h = h;
 }
 
-// Check intersection with any other Rectangle object.
+
+// if frog touches obstacle
+// execute intersection with any other Rectangle object.
+// frog dies and resets
 Rectangle.prototype.intersects = function(other) {
   return !(
     this.x + this.w <= other.x ||
@@ -18,13 +24,14 @@ Rectangle.prototype.intersects = function(other) {
   );
 }
 
-// Moves this rectangle by the provided x and y distances.
+// if frog Moves
+// Move this rectangle by x and y spacing.
 Rectangle.prototype.move = function(x, y) {
   this.x += x;
   this.y += y;
 }
 
-// Simple display of any rectangle
+// Shows all rectangle objects
 Rectangle.prototype.show = function() {
   rect(this.x, this.y, this.w, this.h);
 }

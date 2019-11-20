@@ -1,14 +1,22 @@
-// Daniel Shiffman
+// inspired by Daniel Shiffman, The Coding Train
 'use strict'
+
+// if rectangle encounters an aobstacle
+// execute obstacle function
  function Obstacle(x, y, w, h, s) {
    Rectangle.call(this, x, y, w, h);
+   // if obstacle moves along the grid
+   // execute this speed
    this.speed = s;
  }
 
- // Extend Rectangle
+// if Rectangle obstacle is created
+ // execute Rectangle extension
  Obstacle.prototype = Object.create(Rectangle.prototype);
 
- // Move this obstacle by its speed, and wrap it if off the screen.
+ // Move this obstacle by its speed
+ // wrap it if off the screen.
+ // execute obstacle function
  Obstacle.prototype.update = function() {
    this.move(this.speed, 0);
    if(this.x > width + grid_size) {

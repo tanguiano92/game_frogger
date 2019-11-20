@@ -7,13 +7,16 @@ var grid_size = 50;
 
 var rows = [];
 
-// Handles game reset if the frog dies, or at the initial load.
+// if "Frog" runs into obstacle, or game is at load.
+// "Frog" will update and reset to beginning of game
 function resetGame() {
   frog = new Frog(width / 2, height - grid_size, grid_size);
 }
 
-// p5js setup function, ran on page load.
 function setup() {
+  // if game is started
+  // game will begin
+  // execute rows and obstacles in motion across grid
   width = windowWidth;
   height = windowHeight;
   rows = [
@@ -28,17 +31,21 @@ function setup() {
     new Row(8 * grid_size, 2, 2, 2 * grid_size, 400, 0, false),
     new Row(9 * grid_size, 2, 0, width, 0, 0, true),
   ];
+
+  // if createCanvas
+  // rows will be length of canvas
   createCanvas(width, rows.length * grid_size);
   resetGame();
 }
 
-// p5js draw function, ran on every frame.
 function draw() {
   background(0);
   fill(255, 100);
 
   var intersects = null;
 
+// if "Frog" runs into obstacles
+// execute intersect/reset of game
   for(var i = 0; i < rows.length; i++) {
     rows[i].show();
     rows[i].update();
@@ -50,13 +57,16 @@ function draw() {
     }
   }
 
+  // if "intersects" is in frog.attach
+  // "Frog" will insect rows
   frog.attach(intersects);
   frog.update();
   frog.show();
 }
 
-// p5js key pressed function, runs when any key is pressed on the keyboard
-// while the game is open.
+// if p5.js key pressed function is used
+// can be run when any key is pressed
+// execute controls on keyboard
 function keyPressed() {
   if(keyCode === UP_ARROW) {
     frog.move(0, -grid_size);
