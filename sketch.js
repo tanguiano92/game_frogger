@@ -30,6 +30,16 @@ function setup() {
     new Row(7 * grid_size, 2, -3.5, 1 * grid_size, 300, 150, false),
     new Row(8 * grid_size, 2, 2, 2 * grid_size, 400, 0, false),
     new Row(9 * grid_size, 2, 0, width, 0, 0, true),
+    new Row(10, 1, 0, width, 0, 100, true),
+    new Row(grid_size, 1, 0, width, 0, 0, true),
+    new Row(12 * grid_size, 2,  0.5, 4 * grid_size, 600,  10, true),
+    new Row(13 * grid_size, 3, -1.3, 2 * grid_size, 400,  30, true),
+    new Row(14 * grid_size, 2,  2.3, 3 * grid_size, 350,  25, true),
+    new Row(15 * grid_size, 1, 0, width, 0, 0, true),
+    new Row(16 * grid_size, 3,  1.2, 1 * grid_size, 250, 100, false),
+    new Row(17 * grid_size, 2, -3.5, 1 * grid_size, 300, 150, false),
+    new Row(18 * grid_size, 2, 2, 2 * grid_size, 400, 0, false),
+    new Row(99 * grid_size, 2, 0, width, 0, 0, true),
   ];
 
   // if createCanvas
