@@ -9,14 +9,14 @@ function Row(y, count, speed, obs_width, spacing, offset, inverted) {
   Rectangle.call(this, 0, y, width, grid_size);
   this.obstacles = [];
   this.inverted = inverted;
-  for(var i = 0; i < count; i++) {
+  for (var i = 0; i < count; i++) {
     var x = i * spacing + offset;
     this.obstacles.push(new Obstacle(x, y, obs_width, grid_size, speed));
   }
 }
 
-  // if Rectangle obstacle is created
- // execute Rectangle extension
+// if Rectangle obstacle is created
+// execute Rectangle extension
 Row.prototype = Object.create(Rectangle.prototype);
 
 // Shows this Row
@@ -24,7 +24,7 @@ Row.prototype = Object.create(Rectangle.prototype);
 // if rows are to be shown
 // execute function row
 Row.prototype.show = function() {
-  for(var i = 0; i < this.obstacles.length; i++) {
+  for (var i = 0; i < this.obstacles.length; i++) {
     this.obstacles[i].show();
   }
 }
@@ -33,7 +33,7 @@ Row.prototype.show = function() {
 // execute row function
 // use forLoop to create rows
 Row.prototype.update = function() {
-  for(var i = 0; i < this.obstacles.length; i++) {
+  for (var i = 0; i < this.obstacles.length; i++) {
     this.obstacles[i].update();
   }
 }
@@ -42,8 +42,8 @@ Row.prototype.update = function() {
 // Calculates which obstacle, if any, the collider has intersected.
 Row.prototype.hits = function(collider) {
   var obstacle = null;
-  for(var i = 0; i < this.obstacles.length; i++) {
-    if(collider.intersects(this.obstacles[i])) {
+  for (var i = 0; i < this.obstacles.length; i++) {
+    if (collider.intersects(this.obstacles[i])) {
       obstacle = this.obstacles[i];
     }
   }

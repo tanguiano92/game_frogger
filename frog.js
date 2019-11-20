@@ -8,8 +8,8 @@
 function Frog(x, y, size) {
   Rectangle.call(this, x, y, size, size);
 
-// if "Frog" is given a speed
-// call null
+  // if "Frog" is given a speed
+  // call null
   this.sitting_on = null;
 }
 
@@ -27,7 +27,7 @@ Frog.prototype.attach = function(other) {
 // execute move frog with object.
 // update frog
 Frog.prototype.update = function() {
-  if(this.sitting_on !== null) {
+  if (this.sitting_on !== null) {
     this.x += this.sitting_on.speed;
   }
   this.x = constrain(this.x, 0, width - this.w);
