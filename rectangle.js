@@ -11,10 +11,10 @@ function Rectangle(x, y, w, h) {
 // Check intersection with any other Rectangle object.
 Rectangle.prototype.intersects = function(other) {
   return !(
-    this.x + this.w  <= other.x            ||
-    this.x           >= other.x + other.w  ||
-    this.y + this.h  <= other.y            ||
-    this.y           >= other.y + other.h
+    this.x + this.w <= other.x ||
+    this.x >= other.x + other.w ||
+    this.y + this.h <= other.y ||
+    this.y >= other.y + other.h
   );
 }
 
