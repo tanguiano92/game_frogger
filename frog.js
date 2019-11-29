@@ -1,12 +1,12 @@
 // inspired by Daniel Shiffman: The Coding Train Code Challenge
 'use strict'
-
 // if character is "Frog"
 // execute Frong function to create character
 // call rectangle as "Frog" character
 
 function Frog(x, y, size) {
   Rectangle.call(this, x, y, size, size);
+    //Rectangle.call(this, x, y, size, size);
 
   // if "Frog" is given a speed
   // call null
@@ -37,5 +37,6 @@ Frog.prototype.update = function() {
 // show the frog
 Frog.prototype.show = function() {
   fill(0, 255, 0);
-  rect(this.x, this.y, this.w, this.h);
+  image(frogImg, this.x, this.y, this.w, this.h);
+  //rect(this.x, this.y, this.w, this.h);
 }

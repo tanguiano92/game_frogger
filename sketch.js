@@ -1,15 +1,25 @@
 // inspired by Daniel Shiffman: The Coding Train Code Challenge
 'use strict'
 
+let state = 'title';
+
 var frog;
 
 var grid_size = 25;
 
 var rows = [];
 
+let frogImg;
+
+
+function preload(){
+  frogImg = loadImage('images/catwalkx2.gif');
+}
+
 // if "Frog" runs into obstacle, or game is at load.
 // "Frog" will update and reset to beginning of game
 function resetGame() {
+  text('You Died');
   frog = new Frog(width / 2, height - grid_size, grid_size);
 }
 
@@ -50,9 +60,24 @@ function setup() {
 }
 
 function draw() {
+
+  if (state === 'title'){
+    title();
+} else if (state === 'level 1'){
+  level1();
+}
+
+function title(){
   background(200, 0, 130);
   fill(0);
+  textSize(80);
+  stroke(255);
+  text('MY GAME', 100, 100);
+}
 
+function level1(){
+  background(200, 0, 130);
+}
   var intersects = null;
 
   // if "Frog" runs into obstacles
