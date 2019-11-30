@@ -14,7 +14,7 @@ let frogImg;
 let rainbowImg;
 
 function preload(){
-  frogImg = loadImage('images/catwalkx2.gif');
+  frogImg = loadImage('images/compter.png');
   rainbowImg = loadImage('images/abstract.jpg');
 }
 
