@@ -11,15 +11,16 @@ var rows = [];
 
 let frogImg;
 
+let rainbowImg;
 
 function preload(){
   frogImg = loadImage('images/catwalkx2.gif');
+  rainbowImg = loadImage('images/abstract.jpg');
 }
 
 // if "Frog" runs into obstacle, or game is at load.
 // "Frog" will update and reset to beginning of game
 function resetGame() {
-  text('You Died');
   frog = new Frog(width / 2, height - grid_size, grid_size);
 }
 
