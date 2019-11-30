@@ -62,7 +62,7 @@ function setup() {
 
 function draw() {
   background(200, 12, 130);
-  fill(0)
+  
 
   if (state === 'title'){
     title();
@@ -77,7 +77,6 @@ function title(){;
 }
 
 function level1(){
-  background(200, 0, 130);
 }
   var intersects = null;
 
