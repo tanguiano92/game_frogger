@@ -61,6 +61,8 @@ function setup() {
 }
 
 function draw() {
+  background(200, 12, 130);
+  fill(0)
 
   if (state === 'title'){
     title();
@@ -68,12 +70,10 @@ function draw() {
   level1();
 }
 
-function title(){
-  background(200, 0, 130);
-  fill(0);
+function title(){;
   textSize(80);
   stroke(255);
-  text('MY GAME', 100, 100);
+  text('Digital Art is Art', 105, 105);
 }
 
 function level1(){
