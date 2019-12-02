@@ -46,7 +46,7 @@ function setup() {
     new Row(11 * grid_size, 2, 3, 4 * grid_size, 250, 0, true),
     new Row(12 * grid_size, 5, 0.5, 4 * grid_size, 600, 10, true),
     new Row(13 * grid_size, 3, 3, 2 * grid_size, 400, 30, true),
-    new Row(14 * grid_size, 4, 6, 3 * grid_size, 350, 25, true),
+    new Row(14 * grid_size, 4, 4, 3 * grid_size, 350, 25, true),
     new Row(15 * grid_size, 1, 0, width, 0, 0, true),
     new Row(16 * grid_size, 3, 3, 1 * grid_size, 250, 100, false),
     new Row(17 * grid_size, 5, 6, 1 * grid_size, 300, 150, false),
@@ -62,7 +62,7 @@ function setup() {
 
 function draw() {
   background(200, 12, 130);
-  
+
 
   if (state === 'title'){
     title();
@@ -73,7 +73,10 @@ function draw() {
 function title(){;
   textSize(80);
   stroke(255);
-  text('Digital Art is Art', 105, 105);
+  text('Digital Art Stigma', 105, 105);
+  text('Avoid', 220, 220);
+  text('Hop On!', 320, 320);
+  text('Avoid', 450, 450)
 }
 
 function level1(){
