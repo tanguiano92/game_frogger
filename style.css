@@ -1,0 +1,23 @@
+body-text {
+ color: white;
+ font-size: 50px;
+}
+
+a {
+  color: #590303;
+  text-decoration: line-through;
+  font-size: 100px;
+  font-style: oblique;
+}
+
+a:hover {
+  color: red;
+}
+
+.link-two:hover {
+  color: black;
+  background-color:red;
+}
+video {
+  margin-top: 50px;
+}

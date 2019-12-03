@@ -31,7 +31,7 @@ function setup() {
   width = windowWidth;
   height = windowHeight;
   rows = [
-    new Row(0, 1, 0, width, 0, 100, false),
+    new Row(0, 1, 0, width, 0, 100, true),
     new Row(grid_size, 1, 0, width, 0, 0, true),
     new Row(2 * grid_size, 4, 5, 4 * grid_size, 600, 10, true),
     new Row(3 * grid_size, 3, 8, 2 * grid_size, 400, 30, true),
@@ -52,11 +52,15 @@ function setup() {
     new Row(17 * grid_size, 5, 6, 1 * grid_size, 300, 150, false),
     new Row(18 * grid_size, 4, 5, 2 * grid_size, 400, 0, false),
     new Row(19 * grid_size, 1, 0, width, 0, 0, true),
+    new Row(20 * grid_size, 3, 3, 1 * grid_size, 450, 100, true),
+    new Row(21 * grid_size, 5, 6, 4 * grid_size, 500, 150, true),
+    new Row(22 * grid_size, 4, 5, 2 * grid_size, 600, 25, true),
+    new Row(0, 1, 0, width, 0, 650, true),
   ];
 
   // if createCanvas
   // rows will be length of canvas
-  createCanvas(width, rows.length * grid_size);
+  createCanvas(windowWidth, windowHeight);
   resetGame();
 }
 
@@ -73,10 +77,11 @@ function draw() {
 function title(){;
   textSize(80);
   stroke(255);
-  text('Digital Art Stigma', 105, 105);
+  text('Digital Art is Art', 105, 105);
   text('Avoid', 220, 220);
   text('Hop On!', 320, 320);
   text('Avoid', 450, 450)
+  text('Hop On!', 550, 550);
 }
 
 function level1(){
